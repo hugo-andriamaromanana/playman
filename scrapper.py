@@ -42,7 +42,7 @@ def get_song_data(data,playlist_name,playlist_ID):
     for i in range(len(data)):
         try:
             for j in range(len(data[i]['items'])):
-                song = {}
+                song = {}   
                 song['title'] = clean(data[i]['items'][j]['snippet']['title'])
                 song['publishedAt'] = data[i]['items'][j]['snippet']['publishedAt']
                 song['channel_ID'] = data[i]['items'][j]['snippet']['videoOwnerChannelId']
@@ -62,4 +62,5 @@ def scrap_all_playlists_from():
     for i in dic:
         scrap_playlist(dic[i],i)
 
-scrap_all_playlists_from()
+scrap_playlist('PL3vg9bEaC1nogrs20SEyYdwCFw9UAU4dL','Remember')
+# scrap_all_playlists_from()
