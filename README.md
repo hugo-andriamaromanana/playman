@@ -1,11 +1,13 @@
 # playman
 
-def scrap_playlist(playlist_ID):
-    data = get_playlist_items(playlist_ID)
-    playlist_name = get_playlist_ID_dic(PARAMS['channel_id'])[playlist_ID]
-    get_song_data(data,playlist_name,playlist_ID)
+A script to save all musics from a youtube playlist or profile.
 
-def scrap_all_playlists_from_user():
-    dic = get_playlist_ID_dic(PARAMS['channel_id'])
-    for i in dic:
-        scrap_playlist(dic[i])
+## Requirements
+
+- Python 3
+
+## Usage
+
+```bash
+$ python3 playman.py
+```

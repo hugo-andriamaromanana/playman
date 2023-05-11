@@ -62,5 +62,5 @@ def scrap_all_playlists_from():
     for i in dic:
         scrap_playlist(dic[i],i)
 
-scrap_playlist('PL3vg9bEaC1nogrs20SEyYdwCFw9UAU4dL','Remember')
+scrap_playlist('PLn4GvABOzCQt4ciDfegKgW_Q6kDLfqFa-','Trash')
 # scrap_all_playlists_from()
