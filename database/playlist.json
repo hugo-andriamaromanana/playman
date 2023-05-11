@@ -1,0 +1,946 @@
+{
+    "kind": "youtube#playlistListResponse",
+    "etag": "78VOd9CjRtVXOJj7EBuhuSJsTvQ",
+    "pageInfo": {
+        "totalResults": 22,
+        "resultsPerPage": 50
+    },
+    "items": [
+        {
+            "kind": "youtube#playlist",
+            "etag": "5erkdrOPDb052z_CEyyk72I6Bg0",
+            "id": "PL3vg9bEaC1nobKShWit9nI_Yj7VoAmS9S",
+            "snippet": {
+                "publishedAt": "2023-05-05T07:58:37Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "Remember 4",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/iEe_eraFWWs/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/iEe_eraFWWs/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/iEe_eraFWWs/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/iEe_eraFWWs/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/iEe_eraFWWs/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "Remember 4",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "3yipy1tGuMwR4VFK-jQASgTkvkA",
+            "id": "PL3vg9bEaC1nqWHAWQYjpUrbgHGxidXX_n",
+            "snippet": {
+                "publishedAt": "2023-05-05T07:56:58Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "Remember 3",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/SBWVvnUNdqg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/SBWVvnUNdqg/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/SBWVvnUNdqg/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/SBWVvnUNdqg/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "Remember 3",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "fec63s1x1D0G63LwmEkTOU2JU8U",
+            "id": "PL3vg9bEaC1nqDeqUgRJ-c5Sds_bQ__YEp",
+            "snippet": {
+                "publishedAt": "2023-05-05T07:38:40Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "Remember 2",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/JtFC24EUGoU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/JtFC24EUGoU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/JtFC24EUGoU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/JtFC24EUGoU/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/JtFC24EUGoU/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "Remember 2",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "8yTyoHRDHIdvaAADloFMl7q3UgQ",
+            "id": "PL3vg9bEaC1nqrH8lXTB0LiFFWJn7cSzfa",
+            "snippet": {
+                "publishedAt": "2023-02-21T09:24:05Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "(2023) SPRING",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/JZ-bDNCUaG0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/JZ-bDNCUaG0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/JZ-bDNCUaG0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/JZ-bDNCUaG0/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/JZ-bDNCUaG0/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "(2023) SPRING",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "TinBW54JPedMf_yXZ0smSnvXqUE",
+            "id": "PL3vg9bEaC1nqEuMbSPrce-jHLM4kjMMaj",
+            "snippet": {
+                "publishedAt": "2023-01-16T07:00:54Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "BATCH - Pop",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/T5dspC_jYjw/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/T5dspC_jYjw/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/T5dspC_jYjw/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/T5dspC_jYjw/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/T5dspC_jYjw/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "BATCH - Pop",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "LzgV4uB7j5PyD4FwP2hcKvGHu2M",
+            "id": "PL3vg9bEaC1no2m7EV-h3sKVNWNaoFtoSF",
+            "snippet": {
+                "publishedAt": "2022-11-10T15:55:03Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "(2022) WINTER",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/3oYXQVOEEaQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/3oYXQVOEEaQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/3oYXQVOEEaQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/3oYXQVOEEaQ/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/3oYXQVOEEaQ/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "(2022) WINTER",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "BVUz5a8-WVu8TGDoFeDz32DITIM",
+            "id": "PL3vg9bEaC1nqDtNXFqriPYtqnf1_ewnFn",
+            "snippet": {
+                "publishedAt": "2022-08-28T22:19:40Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "(2022) AUTUMN",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/-mvVFk_mysQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/-mvVFk_mysQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/-mvVFk_mysQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/-mvVFk_mysQ/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/-mvVFk_mysQ/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "(2022) AUTUMN",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "UBMq_nu5XYUiTkzdfDs0bPgAWPY",
+            "id": "PL3vg9bEaC1no_2vrzSpapUA5WSxtwgZxf",
+            "snippet": {
+                "publishedAt": "2022-05-26T20:04:52Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "(2022) SUMMER",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/JYHH0ogYN8M/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/JYHH0ogYN8M/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/JYHH0ogYN8M/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/JYHH0ogYN8M/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/JYHH0ogYN8M/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "(2022) SUMMER",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "wB9Kv_Vqu0DjpYyrUf_ynnHKFnc",
+            "id": "PL3vg9bEaC1nrU6vEgHbp-NgUIpRkuXNI2",
+            "snippet": {
+                "publishedAt": "2022-02-15T08:59:12Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "(2022) SPRING",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/79i5_to8OJo/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/79i5_to8OJo/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/79i5_to8OJo/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/79i5_to8OJo/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/79i5_to8OJo/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "(2022) SPRING",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "NAqJLNzSLq_8qy2uNTNgOGiZ1h4",
+            "id": "PL3vg9bEaC1nonaftGWR9G4RfmecQjEqqy",
+            "snippet": {
+                "publishedAt": "2021-11-21T18:32:14Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "(2021) WINTER",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/poHWCv6FiPw/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/poHWCv6FiPw/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/poHWCv6FiPw/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/poHWCv6FiPw/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/poHWCv6FiPw/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "(2021) WINTER",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "1SRn52aWpOJlfFp-iyLlSFjw1V0",
+            "id": "PL3vg9bEaC1nqYH4WLgmXAT7ObMfcpVE3a",
+            "snippet": {
+                "publishedAt": "2021-09-18T23:31:43Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "(2021) AUTUMN",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/SnjlKb8_ago/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/SnjlKb8_ago/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/SnjlKb8_ago/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/SnjlKb8_ago/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/SnjlKb8_ago/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "(2021) AUTUMN",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "h1PjxGaHbTg2ngIrhZWo_nz0wyI",
+            "id": "PL3vg9bEaC1npHtiUPYOuam-Xfem177mcK",
+            "snippet": {
+                "publishedAt": "2021-06-26T09:01:06Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "(2021) SUMMER",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/w97FQ6vKYu8/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/w97FQ6vKYu8/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/w97FQ6vKYu8/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/w97FQ6vKYu8/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/w97FQ6vKYu8/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "(2021) SUMMER",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "3RXtyQXr8mfWVRH9YI4b0Djenvo",
+            "id": "PL3vg9bEaC1nqjHVyf67kGHEjSDScy7E8-",
+            "snippet": {
+                "publishedAt": "2021-03-29T08:16:23Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "(2021) SPRING",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/omGrk9CdjfQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/omGrk9CdjfQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/omGrk9CdjfQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/omGrk9CdjfQ/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/omGrk9CdjfQ/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "(2021) SPRING",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "-W3uFb8iMRCN_fTzF93sY_-rqXc",
+            "id": "PL3vg9bEaC1nrj4wPTzzWwCGbX9Krj-xbe",
+            "snippet": {
+                "publishedAt": "2020-12-26T15:42:26Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "(2020) WINTER",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/nMJIBrcBgCc/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/nMJIBrcBgCc/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/nMJIBrcBgCc/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/nMJIBrcBgCc/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/nMJIBrcBgCc/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "(2020) WINTER",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "4wJ2EqqndCX9VPH1MZAUKwjl5mQ",
+            "id": "PL3vg9bEaC1np9IKjjw4QTvb-l8YTML3qp",
+            "snippet": {
+                "publishedAt": "2020-11-12T10:41:34Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "(2020) AUTUMN",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/y3BeK_0abdE/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/y3BeK_0abdE/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/y3BeK_0abdE/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/y3BeK_0abdE/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/y3BeK_0abdE/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "(2020) AUTUMN",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "x6N6mbkloYTycuHxeibvmTcNbZI",
+            "id": "PL3vg9bEaC1nogrs20SEyYdwCFw9UAU4dL",
+            "snippet": {
+                "publishedAt": "2020-06-13T16:48:04Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "Remember",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/YnoYDRqjs_s/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/YnoYDRqjs_s/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/YnoYDRqjs_s/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/YnoYDRqjs_s/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/YnoYDRqjs_s/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "Remember",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "vBFS8j0hDKVtbCng1StcOTYyH58",
+            "id": "PL3vg9bEaC1npL8TYOVf-pamaxho1v5x6g",
+            "snippet": {
+                "publishedAt": "2020-06-13T14:52:21Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "(2020) SUMMER",
+                "description": "Mainly Rap / Hip Pop, not all songs are from 2020 but it was the general vibes i was getting from this year",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/Sw5fNI400E4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/Sw5fNI400E4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/Sw5fNI400E4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/Sw5fNI400E4/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "(2020) SUMMER",
+                    "description": "Mainly Rap / Hip Pop, not all songs are from 2020 but it was the general vibes i was getting from this year"
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "lfRsNEMt7CHLvYWPzxWkKwvkqYw",
+            "id": "PL3vg9bEaC1nrvXczb38EWJGWYk0JGLbJI",
+            "snippet": {
+                "publishedAt": "2020-03-31T10:48:55Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "BATCH - Gasy",
+                "description": "Random Malagasy songs I like, don't question it.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/OYxjpH85m3Q/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/OYxjpH85m3Q/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/OYxjpH85m3Q/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/OYxjpH85m3Q/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/OYxjpH85m3Q/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "BATCH - Gasy",
+                    "description": "Random Malagasy songs I like, don't question it."
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "zNgFNqOp__IpNJNcvtScAsW3cSY",
+            "id": "PL3vg9bEaC1nqCkq8KcPo5MhnVk9jvFKr_",
+            "snippet": {
+                "publishedAt": "2019-09-26T06:27:58Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "BATCH - Electro",
+                "description": "Electronic music playlist mainly from the NB3 Music Channel",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/iYmDO0Mrplc/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/iYmDO0Mrplc/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/iYmDO0Mrplc/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/iYmDO0Mrplc/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/iYmDO0Mrplc/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "BATCH - Electro",
+                    "description": "Electronic music playlist mainly from the NB3 Music Channel"
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "tdNt_jSIA50WqthPBjLU8h84_qw",
+            "id": "PL3vg9bEaC1nrRwuhojw71mARkosgnb_o5",
+            "snippet": {
+                "publishedAt": "2019-09-05T06:54:45Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "BATCH - Afro Dance",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/OgJVqPpaxCw/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/OgJVqPpaxCw/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/OgJVqPpaxCw/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/OgJVqPpaxCw/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/OgJVqPpaxCw/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "BATCH - Afro Dance",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "frgYkQf5-TFa_mEogVM6_SDaP2M",
+            "id": "PL3vg9bEaC1no1fAn_FDrfynWmWVrIzCgG",
+            "snippet": {
+                "publishedAt": "2019-07-21T04:19:45Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "BATCH - Shei\u00df",
+                "description": "A playlist for everyone and mainly mainstream, no one will hate those songs . Mainly Pop/Elctro. \nSend this playlist when you want to discover another person's musical taste. PS: if they like this playlist it's probably shit anyways",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/_mqtoKmpWiY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/_mqtoKmpWiY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/_mqtoKmpWiY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/_mqtoKmpWiY/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/_mqtoKmpWiY/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "BATCH - Shei\u00df",
+                    "description": "A playlist for everyone and mainly mainstream, no one will hate those songs . Mainly Pop/Elctro. \nSend this playlist when you want to discover another person's musical taste. PS: if they like this playlist it's probably shit anyways"
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "92u1ZsaHpY-w_f7WY5zsr8Jv5Mc",
+            "id": "PL3vg9bEaC1nqUSuYJwajN0dECO00jk183",
+            "snippet": {
+                "publishedAt": "2019-03-15T22:53:06Z",
+                "channelId": "UCsJ6SLKMBc_ek9BEkdqjfWQ",
+                "title": "BATCH - Retro",
+                "description": "Originally did this playlist for a French Birthday Party, so you'll find french songs lmao",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/EkrvL4fSpw4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/EkrvL4fSpw4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/EkrvL4fSpw4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/EkrvL4fSpw4/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/EkrvL4fSpw4/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Hugo Fenosoa",
+                "localized": {
+                    "title": "BATCH - Retro",
+                    "description": "Originally did this playlist for a French Birthday Party, so you'll find french songs lmao"
+                }
+            }
+        }
+    ]
+}
