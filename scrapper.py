@@ -1,4 +1,5 @@
 from data import *
+from data_cleaner import *
 import requests
 
 
@@ -96,7 +97,7 @@ def get_song_data(data, playlist_name, playlist_ID):
                 song = {}
 
                 try:
-                    song['title'] = clean(
+                    song['title'] = clean_title(
                         data[i]['items'][j]['snippet']['title'])
                 except:
                     song['title'] = 'NaN'

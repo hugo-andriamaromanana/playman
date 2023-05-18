@@ -35,11 +35,3 @@ def add_dic_to_items_csv(item):
         return True
     else:
         return False
-
-def clean(name):
-    trash = get_json('/home/hugo/music/playman/database/trash.json')
-    for i in trash:
-        if name.find(i) != -1:
-            name=name.replace(i, '')
-            return name.replace('()','')
-    return name
