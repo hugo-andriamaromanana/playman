@@ -8,7 +8,7 @@ def get_json(name):
     return data
 
 
-PARAMS = get_json('database/params.json')
+PARAMS = get_json('/home/hugo/music/playman/database/params.json')
 
 
 def dump_json(name, data):
@@ -26,16 +26,18 @@ def add_array_as_row_in_csv(name, arr):
 
 
 def add_dic_to_items_csv(item):
-    items = get_csv('database/items.csv')
+    items = get_csv('/home/hugo/music/playman/database/items.csv')
     if item['title'] not in items['title'].values:
-        items = items.append(item, ignore_index=True)
-        items.to_csv('database/items.csv', index=False)
+        new = pd.DataFrame([item])
+        items = pd.concat([items, new], ignore_index=True)
+        items.to_csv('/home/hugo/music/playman/database/items.csv', index=False)
         print('[SUCCESS]: Song added to database')
-    else: 
-        print('[SKIP]: Song already in database')
+        return True
+    else:
+        return False
 
 def clean(name):
-    trash = get_json('database/trash.json')
+    trash = get_json('/home/hugo/music/playman/database/trash.json')
     for i in trash:
         if name.find(i) != -1:
             name=name.replace(i, '')

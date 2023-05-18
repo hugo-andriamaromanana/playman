@@ -39,6 +39,7 @@ def get_playlist_items(playlist_id):
     return arr
 
 def get_song_data(data,playlist_name,playlist_ID):
+    count=0
     for i in range(len(data)):
         try:
             for j in range(len(data[i]['items'])):
@@ -49,18 +50,22 @@ def get_song_data(data,playlist_name,playlist_ID):
                 song['url'] = data[i]['items'][j]['snippet']['resourceId']['videoId']
                 song['playlist_ID'] = playlist_ID
                 song['playlist_name'] = playlist_name
-                add_dic_to_items_csv(song)
+                if add_dic_to_items_csv(song):
+                    count+=1
         except:
             pass
+    print(f'[SUCCESS]: {count} songs added to database from {playlist_name}')
+
 
 def scrap_playlist(playlist_ID,playlist_name):
     data = get_playlist_items(playlist_ID)
     get_song_data(data,playlist_name,playlist_ID)
+    print(f'[SUCCESS]: {playlist_name} scrapped')
 
 def scrap_all_playlists_from():
     dic = get_playlist_ID_dic(PARAMS['channel_id'])
     for i in dic:
         scrap_playlist(dic[i],i)
 
-scrap_playlist('PLn4GvABOzCQt4ciDfegKgW_Q6kDLfqFa-','Trash')
-# scrap_all_playlists_from()
+# # scrap_playlist('PLn4GvABOzCQt4ciDfegKgW_Q6kDLfqFa-','Trash')
+scrap_all_playlists_from()
