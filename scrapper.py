@@ -2,7 +2,6 @@ from data import *
 from data_cleaner import *
 import requests
 
-
 def get_playlist_ID_dic(ID):
     url = "https://www.googleapis.com/youtube/v3/playlists"
     params = {
@@ -90,20 +89,26 @@ def get_song_data(data, playlist_name, playlist_ID):
 
             for j in range(len(data[i]['items'])):
 
-                url = data[i]['items'][j]['snippet']['resourceId']['videoId']
-
-                meta_data = more_metadata(url)
-
                 song = {}
 
                 try:
                     song['title'] = clean_title(
-                        data[i]['items'][j]['snippet']['title'])
+                        data[i]['items'][j]['snippet']['title']).strip()
                 except:
                     song['title'] = 'NaN'
-                song['publishedAt'] = meta_data['publishedAt']
-                song['duration'] = meta_data['duration']
-                song['topic_categories'] = meta_data['topic_categories']
+
+                if song['title'] in ITEMS['title'].values:
+                    print(f'[SKIPPED]: {song["title"]} already in database')
+                    continue
+
+                url = data[i]['items'][j]['snippet']['resourceId']['videoId']
+
+                meta_data = more_metadata(url)
+
+                song['publishedAt'] = format_date(meta_data['publishedAt'])
+                song['duration'] = format_time(meta_data['duration'])
+                song['topic_categories'] = str(remove_tags(
+                    string_to_arr(meta_data['topic_categories'])))
                 song['view_count'] = meta_data['view_count']
                 song['like_count'] = meta_data['like_count']
                 song['comment_count'] = meta_data['comment_count']
@@ -120,9 +125,11 @@ def get_song_data(data, playlist_name, playlist_ID):
                     count += 1
 
         except:
-
-            print(
-                f'[ERROR]: {data[i]["items"][j]["snippet"]["title"]} not added to database')
+            try:
+                print(
+                    f'[ERROR]: {data[i]["items"][j]["snippet"]["title"]} not added to database')
+            except:
+                print(f'[ERROR]: Unknown not added to database')
             pass
 
     print(f'[SUCCESS]: {count} songs added to database from {playlist_name}')
@@ -141,4 +148,4 @@ def scrap_all_playlists_from():
 
 
 # scrap_playlist('PLn4GvABOzCQt4ciDfegKgW_Q6kDLfqFa-','Trash')
-scrap_all_playlists_from()
+# scrap_all_playlists_from()

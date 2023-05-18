@@ -2,6 +2,7 @@
 import json
 import pandas as pd
 
+
 def get_json(name):
     with open(name, 'r') as f:
         data = json.load(f)
@@ -24,14 +25,14 @@ def add_array_as_row_in_csv(name, arr):
     df = pd.DataFrame(arr)
     df.to_csv(name, mode='a', header=False, index=False)
 
+dump_path = '/home/hugo/music/playman/database/items.csv'
+ITEMS = get_csv(dump_path)
 
 def add_dic_to_items_csv(item):
-    dump_path='/home/hugo/music/playman/database/items.csv'
-    items = get_csv(dump_path)
-    if item['title'] not in items['title'].values:
+    if item['title'] not in ITEMS['title'].values:
         new = pd.DataFrame([item])
-        items = pd.concat([items, new], ignore_index=True)
-        items.to_csv(dump_path, index=False)
+        ITEMS = pd.concat([ITEMS, new], ignore_index=True)
+        ITEMS.to_csv(dump_path, index=False)
         return True
     else:
         return False
