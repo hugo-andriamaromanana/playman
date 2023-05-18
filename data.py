@@ -26,12 +26,12 @@ def add_array_as_row_in_csv(name, arr):
 
 
 def add_dic_to_items_csv(item):
-    items = get_csv('/home/hugo/music/playman/database/items.csv')
+    dump_path='/home/hugo/music/playman/database/items.csv'
+    items = get_csv(dump_path)
     if item['title'] not in items['title'].values:
         new = pd.DataFrame([item])
         items = pd.concat([items, new], ignore_index=True)
-        items.to_csv('/home/hugo/music/playman/database/items.csv', index=False)
-        print('[SUCCESS]: Song added to database')
+        items.to_csv(dump_path, index=False)
         return True
     else:
         return False

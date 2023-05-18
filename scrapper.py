@@ -41,16 +41,41 @@ def get_playlist_items(playlist_id):
 def more_metadata(url):
     url = f'https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,topicDetails,statistics&id={url}&key={PARAMS["key"]}'
     response = requests.get(url).json()
-    return {
-        'duration': response['items'][0]['contentDetails']['duration'],
-        'publishedAt': response['items'][0]['snippet']['publishedAt'],
-        'topic_categories': response['items'][0]["topicDetails"]['topicCategories'],
-        'view_count': response['items'][0]['statistics']['viewCount'],
-        'like_count': response['items'][0]['statistics']['likeCount'],
-        'comment_count': response['items'][0]['statistics']['commentCount'],
-        'tags': response['items'][0]['snippet']['tags'],
-        'channel_title': response['items'][0]['snippet']['channelTitle']
-    }
+    meta_data={}
+    try:
+        meta_data['duration']=response['items'][0]['contentDetails']['duration']
+    except:
+        meta_data['duration']='NaN'
+    try:
+        meta_data['publishedAt']=response['items'][0]['snippet']['publishedAt']
+    except:
+        meta_data['publishedAt']='NaN'
+    try:
+        meta_data['topic_categories']=response['items'][0]['topicDetails']['topicCategories']
+    except:
+        meta_data['topic_categories']='NaN'
+    try:
+        meta_data['view_count']=response['items'][0]['statistics']['viewCount']
+    except:
+        meta_data['view_count']='NaN'
+    try:
+        meta_data['like_count']=response['items'][0]['statistics']['likeCount']
+    except:
+        meta_data['like_count']='NaN'
+    try:
+        meta_data['comment_count']=response['items'][0]['statistics']['commentCount']
+    except:
+        meta_data['comment_count']='NaN'
+    try:
+        meta_data['tags']=response['items'][0]['snippet']['tags']
+    except:
+        meta_data['tags']='NaN'
+    try:
+        meta_data['channel_title']=response['items'][0]['snippet']['channelTitle']
+    except:
+        meta_data['channel_title']='NaN'
+    return meta_data
+
 
 def get_song_data(data,playlist_name,playlist_ID):
 
@@ -65,8 +90,12 @@ def get_song_data(data,playlist_name,playlist_ID):
 
                 meta_data= more_metadata(url)
 
-                song = {}   
-                song['title'] = clean(data[i]['items'][j]['snippet']['title'])
+                song = {}
+
+                try:
+                    song['title'] = clean(data[i]['items'][j]['snippet']['title'])
+                except:
+                    song['title'] = 'NaN'
                 song['publishedAt'] = meta_data['publishedAt']
                 song['duration'] = meta_data['duration']
                 song['topic_categories'] = meta_data['topic_categories']
@@ -81,6 +110,7 @@ def get_song_data(data,playlist_name,playlist_ID):
                 song['url'] = url
 
                 if add_dic_to_items_csv(song):
+                    print(f'[SUCCESS]: {data[i]["items"][j]["snippet"]["title"]} added to database')
                     count+=1
 
         except:
@@ -101,5 +131,5 @@ def scrap_all_playlists_from():
     for i in dic:
         scrap_playlist(dic[i],i)
 
-# # scrap_playlist('PLn4GvABOzCQt4ciDfegKgW_Q6kDLfqFa-','Trash')
-# scrap_all_playlists_from()
+# scrap_playlist('PLn4GvABOzCQt4ciDfegKgW_Q6kDLfqFa-','Trash')
+scrap_all_playlists_from()
