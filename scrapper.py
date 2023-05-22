@@ -80,8 +80,16 @@ def more_metadata(url):
         meta_data['channel_title'] = 'NaN'
     return meta_data
 
+def get_all_titles(playlist_name):
+    df = pd.read_csv('/home/hugo/music/playman/database/items.csv')
+    return list(df['title'].loc[df['playlist_name'] == playlist_name])
+
 
 def get_song_data(data, playlist_name, playlist_ID):
+
+    all_titles = get_all_titles(playlist_name)
+
+    count_titles=0
 
     count = 0
 
@@ -92,7 +100,6 @@ def get_song_data(data, playlist_name, playlist_ID):
 
                 url = data[i]['items'][j]['snippet']['resourceId']['videoId']
 
-                meta_data = more_metadata(url)
 
                 song = {}
 
@@ -101,6 +108,13 @@ def get_song_data(data, playlist_name, playlist_ID):
                         data[i]['items'][j]['snippet']['title']).strip()
                 except:
                     song['title'] = 'NaN'
+
+                if song['title'] in all_titles:
+                    count_titles+=1
+                    continue
+            
+                meta_data = more_metadata(url)
+
                 song['publishedAt'] = format_date(meta_data['publishedAt'])
                 song['duration'] = format_time(meta_data['duration'])
                 song['topic_categories'] = str(remove_tags(string_to_arr(meta_data['topic_categories'])))
@@ -125,6 +139,7 @@ def get_song_data(data, playlist_name, playlist_ID):
                 f'[ERROR]: {data[i]["items"][j]["snippet"]["title"]} not added to database')
             pass
 
+    print(f'[SUCCESS]: {count_titles} songs already in database from {playlist_name}')
     print(f'[SUCCESS]: {count} songs added to database from {playlist_name}')
 
 
