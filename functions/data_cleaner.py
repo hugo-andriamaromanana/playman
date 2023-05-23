@@ -1,4 +1,4 @@
-from data import get_json
+from functions.data import get_json
 
 
 def clean_title(name):

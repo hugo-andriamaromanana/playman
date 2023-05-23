@@ -1,0 +1,11 @@
+Soon:
+-Convert to dB (Sql, MongoDB, Redis, etc)
+-Use .get instead of try and except
+-Add a way to save the errors in a file
+
+Long term:
+-Convert the data, to more human readable data
+
+Try:
+-Use seabon, mathplotlib, plotly to plot the data
+-Learn how and when to use the different types of plots

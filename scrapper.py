@@ -1,5 +1,5 @@
-from data import *
-from data_cleaner import *
+from functions.data import *
+from functions.data_cleaner import *
 import requests
 
 
@@ -81,9 +81,8 @@ def more_metadata(url):
     return meta_data
 
 def get_all_titles(playlist_name):
-    df = pd.read_csv('/home/hugo/music/playman/database/items.csv')
+    df = get_csv('/home/hugo/music/playman/database/items.csv')
     return list(df['title'].loc[df['playlist_name'] == playlist_name])
-
 
 def get_song_data(data, playlist_name, playlist_ID):
 
