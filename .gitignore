@@ -7,4 +7,4 @@ __pycache__/
 functions/__pycache__/
 users/
 functions/data/__pycache__/
-functions/settings/params.json
+settings/params.json
