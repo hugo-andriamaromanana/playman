@@ -4,6 +4,7 @@ from functions.scrapper import *
 from functions.user_creation import *
 
 def main(username,channel_id):
+    
     if channel_id == 'None':
         channel_id = get_channel_ID(username)
     if func_new_user(username):

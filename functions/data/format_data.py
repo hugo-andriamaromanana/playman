@@ -1,8 +1,11 @@
-from functions.data.json_functions import get_json
 import os
+from functions.data.json_functions import get_json
+
 
 def clean_title(name):
-    trash = get_json(os.path.join(os.path.dirname(__file__),'..','..','settings','trash.json'))
+
+    trash = get_json(os.path.join(os.path.dirname(__file__),
+                     '..', '..', 'settings', 'trash.json'))
     for i in trash:
         if name.find(i) != -1:
             name = name.replace(i, '')
@@ -11,6 +14,7 @@ def clean_title(name):
 
 
 def format_time(string):
+
     if string[0] == 'P':
         string = string[1:]
     if string[0] == 'T':
@@ -33,10 +37,13 @@ def format_time(string):
 
 
 def format_date(string):
+
     return string[:string.find('T')]
 
+
 def string_to_arr(string):
-    string=str(string)
+
+    string = str(string)
     string = string.replace('[', '')
     string = string.replace(']', '')
     string = string.replace('\'', '')
@@ -44,7 +51,9 @@ def string_to_arr(string):
     string = string.replace(',', ' ')
     return string.split(' ')
 
+
 def remove_tags(arr):
+    
     for i in range(len(arr)):
         if arr[i].find('https://en.wikipedia.org/wiki/') != -1:
             arr[i] = arr[i][30:]
