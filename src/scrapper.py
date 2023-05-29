@@ -1,9 +1,8 @@
 import requests
 
-from core.scripts.format_data import *
-
-from core.scripts.json_functions import get_json
-from core.scripts.pandas_functions import get_csv, add_dic_to_items_csv
+from src.scripts.format_data import *
+from src.scripts.json_functions import get_json
+from src.scripts.pandas_functions import get_csv, add_dic_to_items_csv
 
 PARAMS = get_json(path.join(path.dirname(
     __file__), '..', 'settings', 'params.json'))

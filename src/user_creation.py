@@ -1,15 +1,13 @@
-from core.scripts.os_functions import *
-from core.scripts.json_functions import get_json,dump_json
+from src.scripts.os_functions import *
+from src.scripts.json_functions import get_json,dump_json
 
 
-def func_new_user(username):
+def check_new_user(username):
 
     users = os.listdir(os.path.join(os.path.dirname(__file__), '..', 'docs'))
 
     if username not in users:
         print('New user creation...')
-        mkdir_user(username)
-        print(f'User: "{username}" created successfully')
         return True
     return False
 

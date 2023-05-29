@@ -1,5 +1,5 @@
 from os import path
-from core.scripts.json_functions import get_json
+from src.scripts.json_functions import get_json
 
 
 def clean_title(name):
