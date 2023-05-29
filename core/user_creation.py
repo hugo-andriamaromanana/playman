@@ -1,5 +1,5 @@
 from core.scripts.os_functions import *
-from core.scripts.json_functions import get_json
+from core.scripts.json_functions import get_json,dump_json
 
 
 def func_new_user(username):
@@ -21,6 +21,8 @@ def add_user_to_settings_users(username, channel_id):
     users_json[username] = {
         "channel_id": channel_id
     }
+    dump_json(users_json, os.path.join(os.path.dirname(
+        __file__), '..', 'settings', 'users.json'))
     return f'User: "{username}" added to settings/users.json'
 
 
