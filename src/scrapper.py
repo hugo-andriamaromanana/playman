@@ -125,9 +125,12 @@ def get_song_data(data, playlist_name, playlist_ID, current_user):
                 url = data[i]['items'][j]['snippet']['resourceId']['videoId']
 
                 song = {}
-
-                song['title'] = clean_title(
-                    data[i]['items'][j]['snippet']['title']).strip()
+                
+                try:
+                    song['title'] = clean_title(
+                        data[i]['items'][j]['snippet']['title']).strip()
+                except:
+                    song['title'] = 'NaN'
 
                 if song['title'] in all_titles:
                     count_titles += 1
