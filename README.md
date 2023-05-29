@@ -34,7 +34,7 @@ This code is a YouTube playlist scraper written in Python. It allows you to scra
    ```
 
    - `<username>`: The username of the YouTube channel.
-   - `<channel_id>`: (Optional) The ID of the YouTube channel. If not provided, the script will retrieve it using the username.
+   - `<channel_id>`: (Optional) The ID of the YouTube channel. If not provided, the script will retrieve it using the username. If the ID is already registered set it to 'None' to skip the user creation step.
 
 ## Usage
 
