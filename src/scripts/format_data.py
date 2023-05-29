@@ -2,7 +2,7 @@ from os import path
 from src.scripts.json_functions import get_json
 
 
-def clean_title(name):
+def clean_title(name: str):
 
     trash = get_json(path.join(path.dirname(__file__),
                      '..', '..', 'settings', 'trash.json'))
@@ -13,7 +13,7 @@ def clean_title(name):
     return name
 
 
-def format_time(string):
+def format_time(string: str):
 
     if string[0] == 'P':
         string = string[1:]
@@ -36,12 +36,12 @@ def format_time(string):
     return hours * 3600 + minutes * 60 + seconds
 
 
-def format_date(string):
+def format_date(string: str):
 
     return string[:string.find('T')]
 
 
-def string_to_arr(string):
+def string_to_arr(string: str) -> list:
 
     string = str(string)
     string = string.replace('[', '')
@@ -52,7 +52,7 @@ def string_to_arr(string):
     return string.split(' ')
 
 
-def remove_tags(arr):
+def remove_tags(arr: list):
     
     for i in range(len(arr)):
         if arr[i].find('https://en.wikipedia.org/wiki/') != -1:

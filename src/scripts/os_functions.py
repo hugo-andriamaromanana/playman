@@ -1,7 +1,7 @@
 import os
 
 
-def mkdir_user(username):
+def mkdir_user(username: str):
     os.mkdir(os.path.join(os.path.dirname(
         __file__), '..', '..', 'docs', username))
     
@@ -10,7 +10,7 @@ def mkdir_user(username):
         f'Path: {os.path.join(os.path.dirname(__file__),"..","..","docs",username)}')
 
 
-def init_items_in_user_DIR(username):
+def init_items_in_user_DIR(username: str):
     items_path = os.path.join(os.path.dirname(
         __file__), "..", '..', 'docs', username, 'items.csv')
     

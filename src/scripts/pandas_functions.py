@@ -2,16 +2,11 @@ import pandas as pd
 from os import path
 
 
-def get_csv(name):
+def get_csv(name: str):
     return pd.read_csv(name)
 
 
-def add_array_as_row_in_csv(name, arr):
-    df = pd.DataFrame(arr)
-    df.to_csv(name, mode='a', header=False, index=False)
-
-
-def add_dic_to_items_csv(item, current_user):
+def add_dic_to_items_csv(item: dict, current_user: str):
 
     dump_path = path.join(path.dirname(
         __file__), "..", '..', 'users', current_user, 'items.csv')

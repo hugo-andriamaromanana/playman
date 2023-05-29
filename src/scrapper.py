@@ -8,14 +8,14 @@ PARAMS = get_json(path.join(path.dirname(
     __file__), '..', 'settings', 'params.json'))
 
 
-def get_channel_ID(username):
+def get_channel_ID(username: str):
 
     users = get_json(path.join(path.dirname(
         __file__), '..', 'settings', 'users.json'))
     return users[username]['channel_id']
 
 
-def get_playlist_ID_dic(ID):
+def get_playlist_ID_dic(ID: str):
 
     url = "https://www.googleapis.com/youtube/v3/playlists"
     params = {
@@ -40,7 +40,7 @@ def get_playlist_ID_dic(ID):
     return dic
 
 
-def get_playlist_items(playlist_id):
+def get_playlist_items(playlist_id: str):
 
     url = "https://www.googleapis.com/youtube/v3/playlistItems"
     params = {
@@ -61,7 +61,7 @@ def get_playlist_items(playlist_id):
     return arr
 
 
-def more_metadata(url):
+def more_metadata(url: str):
 
     url = f'https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,topicDetails,statistics&id={url}&key={PARAMS["key"]}'
     response = requests.get(url).json()
@@ -102,7 +102,7 @@ def more_metadata(url):
     return meta_data
 
 
-def get_all_titles(playlist_name, current_user):
+def get_all_titles(playlist_name: str, current_user: str):
 
     df = get_csv(path.join(path.dirname(__file__),
                  '..', 'docs', current_user, 'items.csv'))
@@ -164,7 +164,7 @@ def get_song_data(data, playlist_name, playlist_ID, current_user):
     print(f'[SUCCESS]: {count} songs added to database from {playlist_name}')
 
 
-def scrap_playlist(playlist_ID, playlist_name, current_user):
+def scrap_playlist(playlist_ID: str, playlist_name: str, current_user: str):
 
     data = get_playlist_items(playlist_ID)
     get_song_data(data, playlist_name, playlist_ID, current_user)
@@ -172,7 +172,7 @@ def scrap_playlist(playlist_ID, playlist_name, current_user):
     print(f'[SUCCESS]: {playlist_name} scrapped')
 
 
-def scrap_all_playlists_from_user(channel_id, current_user):
+def scrap_all_playlists_from_user(channel_id: str, current_user: str):
 
     dic = get_playlist_ID_dic(channel_id)
 

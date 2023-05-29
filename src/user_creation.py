@@ -2,7 +2,7 @@ from src.scripts.os_functions import *
 from src.scripts.json_functions import get_json,dump_json
 
 
-def user_exist(username):
+def user_exist(username: str):
 
     users = os.listdir(os.path.join(os.path.dirname(__file__), '..', 'docs'))
 
@@ -12,7 +12,7 @@ def user_exist(username):
     return True
 
 
-def add_user_to_settings(username, channel_id):
+def add_user_to_settings(username: str, channel_id: str):
 
     users_json = get_json(os.path.join(os.path.dirname(
         __file__), '..', 'settings', 'users.json'))
@@ -24,7 +24,7 @@ def add_user_to_settings(username, channel_id):
     return f'User: "{username}" added to settings/users.json'
 
 
-def create_user_files(username, channel_id):
+def create_user_files(username: str, channel_id: str):
 
     mkdir_user(username)
     add_user_to_settings(username, channel_id)
@@ -32,7 +32,7 @@ def create_user_files(username, channel_id):
     return f"User created successfully: \n Username: {username}\nChannel ID: {channel_id}"
 
 
-def save_channel_id(username, channel_id):
+def save_channel_id(username: str, channel_id: str):
 
     users_json = get_json(os.path.join(os.path.dirname(
         __file__), '..', 'settings', 'users.json'))

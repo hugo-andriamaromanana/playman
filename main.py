@@ -4,11 +4,11 @@ from src.scrapper import *
 from src.user_creation import *
 
 
-def main(username, channel_id):
+def main(username: str, channel_id: str):
 
     if channel_id == 'None':
         channel_id = get_channel_ID(username)
-        
+
     if not user_exist(username):
         create_user_files(username, channel_id)
         print(f'User: "{username}" created successfully')
