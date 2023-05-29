@@ -1,8 +1,8 @@
-from functions.data import get_json
-
+from functions.data.json_functions import get_json
+import os
 
 def clean_title(name):
-    trash = get_json('/home/hugo/music/playman/database/trash.json')
+    trash = get_json(os.path.join(os.path.dirname(__file__),'..','..','settings','trash.json'))
     for i in trash:
         if name.find(i) != -1:
             name = name.replace(i, '')

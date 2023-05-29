@@ -1,6 +1,9 @@
 database/params.json
 database/items_1805.csv
-ignore/
+__ignore__/
 database/items.csv
 database/items_.csv
 __pycache__/
+functions/__pycache__/
+users/
+funtcions/data/__pycache__/

@@ -1,7 +1,17 @@
-from functions.data import *
-from functions.data_cleaner import *
 import requests
 
+from functions.data.format_data import *
+
+from functions.data.json_functions import get_json
+from functions.data.pandas_functions import get_csv, add_dic_to_items_csv
+from functions.data.os_functions import *
+
+PARAMS = get_json(os.path.join(os.path.dirname(__file__),'..','settings','params.json'))
+
+
+def get_channel_ID(username):
+    users = get_json(os.path.join(os.path.dirname(__file__),'..','settings','users.json'))
+    return users[username]['channel_id']
 
 def get_playlist_ID_dic(ID):
     url = "https://www.googleapis.com/youtube/v3/playlists"
@@ -80,13 +90,13 @@ def more_metadata(url):
         meta_data['channel_title'] = 'NaN'
     return meta_data
 
-def get_all_titles(playlist_name):
-    df = get_csv('/home/hugo/music/playman/database/items.csv')
+def get_all_titles(playlist_name,current_user):
+    df = get_csv(os.path.join(os.path.dirname(__file__),'..','users',current_user,'items.csv'))
     return list(df['title'].loc[df['playlist_name'] == playlist_name])
 
-def get_song_data(data, playlist_name, playlist_ID):
+def get_song_data(data, playlist_name, playlist_ID, current_user):
 
-    all_titles = get_all_titles(playlist_name)
+    all_titles = get_all_titles(playlist_name,current_user)
 
     count_titles=0
 
@@ -102,11 +112,8 @@ def get_song_data(data, playlist_name, playlist_ID):
 
                 song = {}
 
-                try:
-                    song['title'] = clean_title(
-                        data[i]['items'][j]['snippet']['title']).strip()
-                except:
-                    song['title'] = 'NaN'
+                song['title'] = clean_title(
+                    data[i]['items'][j]['snippet']['title']).strip()
 
                 if song['title'] in all_titles:
                     count_titles+=1
@@ -127,7 +134,7 @@ def get_song_data(data, playlist_name, playlist_ID):
                 song['playlist_ID'] = playlist_ID
                 song['url'] = url
 
-                if add_dic_to_items_csv(song):
+                if add_dic_to_items_csv(song,current_user):
                     print(
                         f'[SUCCESS]: {data[i]["items"][j]["snippet"]["title"]} added to database')
                     count += 1
@@ -142,17 +149,13 @@ def get_song_data(data, playlist_name, playlist_ID):
     print(f'[SUCCESS]: {count} songs added to database from {playlist_name}')
 
 
-def scrap_playlist(playlist_ID, playlist_name):
+def scrap_playlist(playlist_ID, playlist_name, current_user):
     data = get_playlist_items(playlist_ID)
-    get_song_data(data, playlist_name, playlist_ID)
+    get_song_data(data, playlist_name, playlist_ID, current_user)
     print(f'[SUCCESS]: {playlist_name} scrapped')
 
 
-def scrap_all_playlists_from():
-    dic = get_playlist_ID_dic(PARAMS['channel_id'])
+def scrap_all_playlists_from_user(channel_id, current_user):
+    dic = get_playlist_ID_dic(channel_id)
     for i in dic:
-        scrap_playlist(dic[i], i)
-
-
-# scrap_playlist('PLn4GvABOzCQt4ciDfegKgW_Q6kDLfqFa-','Trash')
-scrap_all_playlists_from()
+        scrap_playlist(dic[i], i, current_user)
