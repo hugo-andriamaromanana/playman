@@ -2,43 +2,43 @@ from os import path
 from src.scripts.json_functions import get_json
 
 
-def clean_title(name: str):
+def clean_title(title: str):
 
-    trash = get_json(path.join(path.dirname(__file__),
+    trash = get_json(path.join(path.dirtitle(__file__),
                      '..', '..', 'settings', 'trash.json'))
     for i in trash:
-        if name.find(i) != -1:
-            name = name.replace(i, '')
-            return name.replace('()', '')
-    return name
+        if title.find(i) != -1:
+            title = title.replace(i, '')
+            return title.replace('()', '')
+    return title
 
 
-def format_time(string: str):
+def format_time(time: str):
 
-    if string[0] == 'P':
-        string = string[1:]
-    if string[0] == 'T':
-        string = string[1:]
-    if string.find('H') != -1:
-        hours = int(string[:string.find('H')])
-        string = string[string.find('H') + 1:]
+    if time[0] == 'P':
+        time = time[1:]
+    if time[0] == 'T':
+        time = time[1:]
+    if time.find('H') != -1:
+        hours = int(time[:time.find('H')])
+        time = time[time.find('H') + 1:]
     else:
         hours = 0
-    if string.find('M') != -1:
-        minutes = int(string[:string.find('M')])
-        string = string[string.find('M') + 1:]
+    if time.find('M') != -1:
+        minutes = int(time[:time.find('M')])
+        time = time[time.find('M') + 1:]
     else:
         minutes = 0
-    if string.find('S') != -1:
-        seconds = int(string[:string.find('S')])
+    if time.find('S') != -1:
+        seconds = int(time[:time.find('S')])
     else:
         seconds = 0
     return hours * 3600 + minutes * 60 + seconds
 
 
-def format_date(string: str):
+def format_date(date: str):
 
-    return string[:string.find('T')]
+    return date[:date.find('T')]
 
 
 def string_to_arr(string: str) -> list:
@@ -52,11 +52,11 @@ def string_to_arr(string: str) -> list:
     return string.split(' ')
 
 
-def remove_tags(arr: list):
+def remove_tags(tags: list):
     
-    for i in range(len(arr)):
-        if arr[i].find('https://en.wikipedia.org/wiki/') != -1:
-            arr[i] = arr[i][30:]
+    for i in range(len(tags)):
+        if tags[i].find('https://en.wikipedia.org/wiki/') != -1:
+            tags[i] = tags[i][30:]
     if 'Music' in arr:
-        arr.remove('Music')
-    return arr
+        tags.remove('Music')
+    return tags
