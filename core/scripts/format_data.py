@@ -1,10 +1,10 @@
-import os
-from functions.data.json_functions import get_json
+from os import path
+from core.scripts.json_functions import get_json
 
 
 def clean_title(name):
 
-    trash = get_json(os.path.join(os.path.dirname(__file__),
+    trash = get_json(path.join(path.dirname(__file__),
                      '..', '..', 'settings', 'trash.json'))
     for i in trash:
         if name.find(i) != -1:

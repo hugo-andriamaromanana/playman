@@ -1,10 +1,10 @@
-from functions.data.os_functions import *
-from functions.data.json_functions import get_json
+from core.scripts.os_functions import *
+from core.scripts.json_functions import get_json
 
 
 def func_new_user(username):
 
-    users = os.listdir(os.path.join(os.path.dirname(__file__), '..', 'users'))
+    users = os.listdir(os.path.join(os.path.dirname(__file__), '..', 'docs'))
 
     if username not in users:
         print('New user creation...')
@@ -32,7 +32,7 @@ def create_user(username, channel_id):
 
 
 def save_channel_id(username, channel_id):
-    
+
     users_json = get_json(os.path.join(os.path.dirname(
         __file__), '..', 'settings', 'users.json'))
     users_json[username]['channel_id'] = channel_id

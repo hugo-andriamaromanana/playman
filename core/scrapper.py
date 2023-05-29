@@ -1,18 +1,17 @@
 import requests
 
-from functions.data.format_data import *
+from core.scripts.format_data import *
 
-from functions.data.json_functions import get_json
-from functions.data.pandas_functions import get_csv, add_dic_to_items_csv
-from functions.data.os_functions import *
+from core.scripts.json_functions import get_json
+from core.scripts.pandas_functions import get_csv, add_dic_to_items_csv
 
-PARAMS = get_json(os.path.join(os.path.dirname(
+PARAMS = get_json(path.join(path.dirname(
     __file__), '..', 'settings', 'params.json'))
 
 
 def get_channel_ID(username):
-    
-    users = get_json(os.path.join(os.path.dirname(
+
+    users = get_json(path.join(path.dirname(
         __file__), '..', 'settings', 'users.json'))
     return users[username]['channel_id']
 
@@ -106,8 +105,8 @@ def more_metadata(url):
 
 def get_all_titles(playlist_name, current_user):
 
-    df = get_csv(os.path.join(os.path.dirname(__file__),
-                 '..', 'users', current_user, 'items.csv'))
+    df = get_csv(path.join(path.dirname(__file__),
+                 '..', 'docs', current_user, 'items.csv'))
     return list(df['title'].loc[df['playlist_name'] == playlist_name])
 
 
