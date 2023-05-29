@@ -8,8 +8,8 @@ def user_exist(username):
 
     if username not in users:
         print('New user creation...')
-        return True
-    return False
+        return False
+    return True
 
 
 def add_user_to_settings(username, channel_id):
@@ -26,6 +26,7 @@ def add_user_to_settings(username, channel_id):
 
 def create_user_files(username, channel_id):
 
+    mkdir_user(username)
     add_user_to_settings(username, channel_id)
     init_items_in_user_DIR(username)
     return f"User created successfully: \n Username: {username}\nChannel ID: {channel_id}"
