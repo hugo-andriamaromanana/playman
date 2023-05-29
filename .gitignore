@@ -6,4 +6,5 @@ database/items_.csv
 __pycache__/
 functions/__pycache__/
 users/
-funtcions/data/__pycache__/
+functions/data/__pycache__/
+functions/settings/params.json
