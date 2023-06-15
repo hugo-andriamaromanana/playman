@@ -1,7 +1,5 @@
 import sys
 
-#Bruh
-
 from src.scrapper import *
 from src.user_creation import *
 
